@@ -1,4 +1,68 @@
 body
 {
 	font-family: 'Exo', sans-serif;
+	box-sizing: border-box;
+	background-color: #f8f8f8;
+}
+
+#sectiona
+{
+	
+	height: 70vh;
+	background-color: aliceblue;
+	}
+
+#sectionb
+{
+	
+	height: 30vh;
+	background-color: gray;
+	
+}
+
+.cardbox
+{
+	margin-left: 50px;
+	margin-right: 50px;
+	width: 80vw;
+	display: flex;
+	align-items: center;
+	justify-items: center;
+	position: absolute;
+}
+
+.card
+{
+	
+	background-color: #ffffff;
+	margin: 20px;
+	border-radius: 5px;
+	width: 300px;
+	height: 450px;
+	border: 5px solid red;
+	
+	}
+	
+	.cardimage
+	
+	{
+		
+		width: 298px;
+		height: 250px;
+		padding-left: 1px;
+		
+		
+		
+	}
+
+#logo
+{
+	height: 60px;
+	margin: 20px;
+	
+}
+
+h1
+{
+	color: #2c3e50;
 }
