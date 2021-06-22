@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 22, 2021 at 11:29 AM
+-- Generation Time: Jun 22, 2021 at 11:53 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.1
 
@@ -45,7 +45,10 @@ CREATE TABLE `kursai` (
 --
 
 INSERT INTO `kursai` (`autorius`, `kurso_ikelimas`, `kurso_pavadinimas`, `kurso_aprasas_trump`, `kurso_aprasas_ilg`, `Img_nuoroda`, `Kurso_populiarumas`, `Komentarai_ID`, `Kaina`, `Reitingas`) VALUES
-('Vardas', '2021-06-22 09:29:03', 'Žiniatinklio programuotojas', ' Žiniatinklio programuotojo kursai ...', 'Būsimas specialistas turi gebėti eksploatuoti kompiuterio techninę įrangą ir derinti operacines sistemas, pritaikyti taikomąsias programas įvairiems vartotojų poreikiams bei mokės projektuoti, kurti ir administruoti internetinius puslapius. ...', 'program.jpg', 105, 1, 460, 5);
+('Vardas', '2021-06-22 09:29:03', 'Žiniatinklio programuotojas', ' Žiniatinklio programuotojo kursai ...', 'Būsimas specialistas turi gebėti eksploatuoti kompiuterio techninę įrangą ir derinti operacines sistemas, pritaikyti taikomąsias programas įvairiems vartotojų poreikiams bei mokės projektuoti, kurti ir administruoti internetinius puslapius. ...', 'img/php.jpg', 105, 1, 460, 5),
+('Vardas', '2021-06-22 09:46:52', 'HTML/CSS Įvadas', ' Lorem ipsum dolor sit amet ...', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ...', 'img/css.jpg', 255, 2, 420, 5),
+('Vardas', '2021-06-22 09:51:48', 'Pažintis su GIT ', ' Lorem ipsum dolor sit amet ...', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ...', 'img/git.jpg', 25, 3, 120, 3),
+('Vardas', '2021-06-22 09:52:53', 'JavaScript Žaliems', ' Lorem ipsum dolor sit amet ...', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ...', 'img/js.jpg', 210, 4, 480, 5);
 
 --
 -- Indexes for dumped tables
@@ -65,7 +68,7 @@ ALTER TABLE `kursai`
 -- AUTO_INCREMENT for table `kursai`
 --
 ALTER TABLE `kursai`
-  MODIFY `Komentarai_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `Komentarai_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
