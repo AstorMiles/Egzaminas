@@ -18,6 +18,22 @@
   </header>
   <div class="container">
             <h1>Naujausi Kursai</h1>
+                      <?php
+
+            $query = "SELECT * FROM kursai";
+            $result = mysqli_query($connect, $query);
+
+            if (mysqli_num_rows($result) > 0) {
+
+                while ($row = mysqli_fetch_array($result)) {
+                    $courseID = $row['Komentarai_ID'];
+                    $count = "SELECT count(*) as commentCount FROM `komentarai` WHERE Komentaro_ID = '$courseID'";
+                    $countResult = $connect->query($count);
+                    $comments = $countResult->fetch_assoc();
+                    $rating = $row['Reitingas'];
+                    $ID = $row['kurso_pavadinimas'];
+                    $name = $row['autorius'];
+            ?>
   <div class="d-flex">
     <div class="cardbox">
       <div class="card">
